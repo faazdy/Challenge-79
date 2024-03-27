@@ -123,6 +123,7 @@ fieldset legend{
 
 .container .info{
     align-self: flex-end;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 850px){
