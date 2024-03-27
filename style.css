@@ -72,11 +72,13 @@ button img{
 
 fieldset{
     border: none;
-    border-top: 1px solid white;
+    border-top: 2px solid rgba(255, 255, 255, 0.582);
     margin: 1.5em 0;
 }
 fieldset legend{
+    color: rgba(255, 255, 255, 0.582);;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .login .form input{
