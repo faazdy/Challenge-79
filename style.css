@@ -1,0 +1,138 @@
+:root{
+    --font: "Mulish", sans-serif;
+    --bodybg: #040404;
+    --loginbg: #080808d5;
+    --btnbg: #4285F4;
+    --btn-conbg: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
+body{
+    background-color: var(--bodybg);
+
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: url(img/background.png);
+    width: 60%;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    border-radius: 20px;
+    color: var(--btn-conbg);
+}
+.container section{
+    flex: 50%;
+}
+
+.container .login{
+    background-color: var(--loginbg);
+    padding: 1em;
+    padding-top: 4em;
+    border-radius: 10px;
+}
+
+.login .api{
+    margin: 1em 0;
+}
+.api button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: .5em 1em;
+    margin: 1.5em 0;
+    background-color: var(--btnbg);
+    color: var(--btn-conbg);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.api button:hover{
+    cursor: pointer;
+    background-color: #0a68ff;
+    transition: .3s all;
+}
+button img{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+fieldset{
+    border: none;
+    border-top: 1px solid white;
+    margin: 1.5em 0;
+}
+fieldset legend{
+    margin: 0 auto;
+}
+
+.login .form input{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+.form #email{
+    background-color: transparent;
+    color: var(--btn-conbg);
+}
+.form #email:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--btn-conbg);
+    border-radius: 0;
+    transition: 0.3s ease;
+}
+.form #submit{
+    font-size: 15px;
+    font-weight:bold;
+    font-style: italic;
+    border-color: var(--btn-conbg);
+    
+}
+.form #submit:hover{
+    transform: translateY(-3px);
+    transition: .3s all;
+    border-radius: 0;
+    border-color: #999999;
+    cursor: pointer;
+    background-color: #999999;
+}
+.container p{
+    margin: 2.5em 0;
+}
+.container p a{
+    text-decoration: none;
+    color: var(--btnbg);
+}
+
+.container .info{
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 850px){
+    .container{
+        margin: 2em 0;
+        width: 90%;
+        background-size: cover;
+        flex-direction: column-reverse;
+    }
+    .container .info{
+        padding: 1em;
+    }
+}
